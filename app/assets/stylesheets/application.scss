@@ -1,4 +1,43 @@
 @import "bootstrap";
+
+.bg-image {
+  /* The image used */
+  background-image: url("1.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 20%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.top-left {
+  position: absolute;
+  top: 200px;
+  left: 280px;
+  
+}
+.right{
+  text-align: center;
+}
+.center{
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.c{
+  height: 300px;
+}
+.d{
+  height: 100px;
+}
 .card:hover {
     transform: scale(1.1);
   }
@@ -12,9 +51,73 @@
     text-align: center;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }  
+.responsive{
+  height: 50px;
+  width: 100%;
+}
+.responsive1{
+  height: auto;
+  width: 100%;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-.height{
-    height: 630px;
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: whitesmoke;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: blue;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  height: 2300px;
+}
+
+.footer {
+  background-color: #4d6167;
+  margin-top: -1.1em;
+  margin-bottom: -1.1em;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 604px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.sidebar li{
+    list-style: none;
 }
 
 * {box-sizing:border-box}
@@ -22,14 +125,20 @@
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
+  height: 270px;
   position: relative;
   margin: auto;
 }
-
-/* Hide the images by default */
-.mySlides {
+.mySlides{
   display: none;
 }
+/* Hide the images by default */
+.mySlides.active {
+  display: block;
+}
+
+
+
 
 /* Next & previous buttons */
 .prev, .next {

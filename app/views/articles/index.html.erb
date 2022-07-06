@@ -1,59 +1,60 @@
-<div class="container-fluid">
-    <div class="row flex-nowrap">
-          <%= render(:partial => 'sidebar')%>
+        <%= render(:partial => 'sidebar')%>
+        <div class="content">
+        <div class="bg-image"></div>
+        <div class="top-left">
+         <h4 class="dispaly-3 right">Advanced level of product</h4>
+         <h1 class="display-1 fw-bold right">Mobile</h1>
+         <h1 class="display-1 fw-bold right">Batteries</h1>
+         <button type="button" class="btn btn-dark mb-3 center">Buy Now</button>
 
-        <div class="col py-3">
-        <%=image_tag("1.jpeg", size: "1030x200")%>
-
+         </div>
         <br><br><br>
-        <h2 class="text center">FEATURED CATEGORIES</h2>
+        <h2 class="text-center">FEATURED CATEGORIES</h2>
         <br>
-
-        <div class="container-fluid">
+        <div class="container ml-30">
         <div class="row">
 
-        <div class="col-4">
-        <div class="card shadow card1">
-        <div class="hover-zoom">
-        <%=image_tag("2.jpeg", size: "210x230")%>
-        </div>
-        <div class="container">
-        <h4><b>Iphone</b></h4>
-
-       </div>
-      </div>
-        </div>
-
-        <div class="col-4">
-        <div class="card shadow card1">
-        <div class="hover-zoom">
-        <%=image_tag("5.jpeg", size: "210x230")%>
-        </div>
-        <div class="container">
-        <h4><b>Samsung</b></h4>
-
-       </div>
-      </div>
-        </div>
-
-        <div class="col-4">
-        <div class="card shadow card1">
-        <div class="hover-zoom">
-        <%=image_tag("4.jpeg", size: "210x230")%>
-        </div>
-        <div class="container">
-        <h4><b>Oppo</b></h4>
-
-       </div>
-      </div>
-        </div>
-
-    </div>
-    </div>
-    
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+        <!-- Bootstrap 5 card box -->
+        <div class="card-box">
+            <div class="card-thumbnail shadow b">
+            <center>
+            <%=image_tag("2.jpeg", class:"img-fluid c")%>
+            </center>
+            <h4 class="text-center">Iphone</h4>
+            </div> 
         </div>
     </div>
+
+    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <!-- Bootstrap 5 card box -->
+            <div class="card-box">
+                <div class="card-thumbnail shadow b">
+                <center>
+                <%=image_tag("5.jpeg", class:"img-fluid c")%>
+                </center>
+                <h4 class="text-center">Iphone</h4>
+                </div> 
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+        <!-- Bootstrap 5 card box -->
+        <div class="card-box">
+            <div class="card-thumbnail shadow b">
+            <center>
+            <%=image_tag("4.jpeg", class:"img-fluid c")%>
+            </center>
+            <h4 class="text-center">Iphone</h4>
+            </div> 
+        </div>
+    </div>
+
 </div>
+   </div>    
+    
+  
 
 <br><br>
     <h4 class="text-center">All Brands</h4>
@@ -61,66 +62,72 @@
    <div class ="container">
    <div class="row">
 
-       <div class="col-2">
+       <div class="col-lg-2 col-md-6 col-sm-6 col-12">
        <div class ="container border border-4 b">
-       <%=image_tag("oppo.png", size: "100x60")%>
+       <%=image_tag("oppo.png", class:"responsive")%>
        </div>
        </div>
 
-       <div class="col-2">
+       <div class="col-lg-2 col-md-6 col-sm-6 col-12">
        <div class ="container border border-4 b">
-       <%=image_tag("sam.png", size: "100x60")%>
+       <%=image_tag("sam.png", class:"responsive")%>
        </div>
        </div>
 
-       <div class="col-2">
+       <div class="col-lg-2 col-md-6 col-sm-6 col-12">
        <div class ="container border border-4 b">
-       <%=image_tag("nokia.png", size: "100x60")%>
+       <%=image_tag("nokia.png",class:"responsive")%>
        </div>
        </div>
 
-       <div class="col-2">
+       <div class="col-lg-2 col-md-6 col-sm-6 col-12">
        <div class ="container border border-4 b">
-       <%=image_tag("ip.png", size: "100x60")%>
+       <%=image_tag("ip.png", class:"responsive")%>
        </div>
        </div>
 
-       <div class="col-2">
+       <div class="col-lg-2 col-md-6 col-sm-6 col-12">
        <div class ="container border border-4 b">
-       <%=image_tag("infi.png", size: "100x60")%>
+       <%=image_tag("infi.png", class:"responsive")%>
        </div>
        </div>
 
-       <div class="col-2">
+       <div class="col-lg-2 col-md-6 col-sm-6 col-12">
        <div class ="container border border-4 b">
-       <%=image_tag("tecno.png", size: "100x60")%>
+       <%=image_tag("tecno.png", class:"responsive")%>
        </div>
        </div>
 
    </div>
    </div>
-   <br><br><br>
+   <br>
 
-   <div class ="container">
-   <div class="row">
+<div class ="container">
+<div class="row">
 
-      <div class="col-4">
-      <%=image_tag("long.webp", size: "250x400")%>
-      </div>
-      
-      <div class="col-8">
-      <%=image_tag("feed.jpg", size: "800x400")%>
-      </div>
-
-
+   <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-5">
+   <%=image_tag("long.jpg", height:"600px",width:"100%")%>
    </div>
+
+   <div class="col-lg-8 col-md-12 col-sm-12 col-12 ml-8 mt-5">
+   <%=image_tag("feed.jpg", height:"600px",width:"100%")%>
    </div>
+
+</div>
+</div>
+
    <br><br>
     <h4 class="text-center">Best Seller Products</h4>
     <br><br>
-
     <!-- Slideshow container -->
 <div class="slideshow-container">
 <%= render(:partial => 'slideshow')%>
-
 </div>
+
+<div class="container">
+<%=image_tag("fast.png", height:"200px",width:"100%")%>
+</div>
+
+</div>  <!-- div content over -->
+
+
