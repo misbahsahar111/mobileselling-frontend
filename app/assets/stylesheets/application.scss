@@ -226,10 +226,12 @@ div.content {
   position: sticky;
 }
 
-div.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+
+.fade-in-image { animation: fadeIn 5s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
