@@ -52,7 +52,7 @@
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }  
 .responsive{
-  height: 50px;
+  height: 60px;
   width: 100%;
 }
 .responsive1{
@@ -216,6 +216,21 @@ div.content {
   to {opacity: 1}
 }
 
+.btn.btn-rounded {
+  border-radius: 50px;
+}  
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  position: sticky;
+}
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
