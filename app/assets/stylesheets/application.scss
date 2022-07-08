@@ -89,9 +89,35 @@
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  height: 2300px;
+
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    div.content {
+      margin-left: 200px;
+      height: 4300px;
+    }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    div.content {
+      margin-left: 200px;
+      height: 4300px;
+    }
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    div.content {
+      margin-left: 200px;
+      height: 2450px;
+    }
 }
 
 .footer {
