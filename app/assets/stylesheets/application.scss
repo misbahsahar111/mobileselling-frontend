@@ -319,6 +319,9 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
     p {
       font-size: 30px;
     }
+    h4 {
+      font-size: 40px;
+    }
     h1{
       font-size: 60px;
     }
@@ -336,7 +339,7 @@ background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, F
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     .b {
-      font-size: 200px;
+      font-size: 30px;
     }
   }
   
