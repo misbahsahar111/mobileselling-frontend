@@ -1,0 +1,28 @@
+<form>
+      <div class="mb-3 text-start form-element">
+        <label for="" class="form-label">User Name</label>
+        <input type="text" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" class="form-control" title="Invalid name" required>
+        
+      </div>
+
+      <div class="mb-3 text-start form-element">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" class="form-control" title="Invalid email address" required />
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+
+      <div class="mb-3 text-start form-element">
+        <label for="" class="form-label">Phone</label>
+        <input type="text" pattern="^[0][1-9]\d{9}$|^[1-9]\d{9}$" class="form-control" title="Invalid phone number" required />
+        
+      </div>
+      
+      <div class="mb-3 text-start form-element">
+        <label for="comment" class="form-label">Message</label>
+        <textarea name="comment" form="usrform" class="form-control" rows="10">Enter text here...</textarea>
+        
+      </div>
+      <button type="button" class="btn btn-dark mb-3 center">Buy Now</button>
+
+    </form>
+    

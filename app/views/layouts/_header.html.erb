@@ -8,16 +8,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link" href="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact">Contact</a>
+      </li>
+          <div class="setposition">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <center>
+            <div class="input-group SearchBar">
+            <div class="form-outline">
+              <input type="search" placeholder="Search" id="form1" class="form-control" />
+              <label class="form-label" for="form1">Search</label>
+            </div>
+            <button type="button" class="btn btn-primary h">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+            </center>
             </li>
-            
-            <li class="nav-item">
-            <button type="button" class="btn btn-dark mb-3" onClick="document.getElementById('middle').scrollIntoView();">About</button>
-            </li>
-            <li class="nav-item">
-            <button type="button" class="btn btn-dark mb-3" onClick="document.getElementById('last').scrollIntoView();">Contact</button>
-            </li>
+            </div>
           </ul>
         </div>
       </div>
